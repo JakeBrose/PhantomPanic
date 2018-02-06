@@ -34,6 +34,10 @@ angular
             .when("/items/list/rules", {
                 templateUrl: "partials/rules.html",
                 controller: "rulesCtrl"
+            })
+            .when("/items/list/lore", {
+                templateUrl: "partials/lore.html",
+                controller: "loreCtrl"
             });
     })
     .run(FBCreds => {
