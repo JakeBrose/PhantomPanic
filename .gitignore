@@ -1,2 +1,3 @@
 library/data/data.json
 node_modules
+app/fb-creds.js

@@ -1,0 +1,255 @@
+{
+    "units": [
+        {
+            "id":"0" ,
+            "name":"Nemed the Fomorian",
+            "class":"Heavy",
+            "faction":"Henkei",
+            "health": 7,
+            "stamina": 3,
+            "might": 8,
+            "cunning":3,
+            "intellect":3,
+            "cost": "24"
+        },
+        {
+            "id": "1",
+            "name": "Banshee Deadeye",
+            "class": "Sniper",
+            "faction": "Henkei",
+            "health": 1,
+            "stamina": 5,
+            "might": 2,
+            "cunning": 6,
+            "intellect": 2,
+            "cost": "14"
+        },
+        {
+            "id": "2",
+            "name": "Zhi: Captain of the Delta-Frigate, Revenant",
+            "class": "Infiltrator",
+            "faction": "Umbra Corsairs",
+            "health": 3,
+            "stamina": 5,
+            "might": 4,
+            "cunning": 4,
+            "intellect": 4,
+            "cost": "20"
+        },
+        {
+            "id": "3",
+            "name": "Revenant Scout",
+            "class": "Skirmisher",
+            "faction": "Umbra Corsairs",
+            "health": 3,
+            "stamina": 5,
+            "might": 6,
+            "cunning": 4,
+            "intellect": 2,
+            "cost": "20"
+        },
+        {
+            "id": "4",
+            "name": "Tamoe, the Phantom Blade",
+            "class": "Skirmisher",
+            "faction": "Wrath Corporation",
+            "health": 3,
+            "stamina": 5,
+            "might": 7,
+            "cunning": 3,
+            "intellect": 2,
+            "cost": "20"
+        },
+        {
+            "id": "5",
+            "name": "Yoma Node Breaker",
+            "class": "Hacker",
+            "faction": "Wrath Corporation",
+            "health": 2,
+            "stamina": 4,
+            "might": 2,
+            "cunning": 2,
+            "intellect": 6,
+            "cost": "16"
+        },
+        {
+            "id": "6",
+            "name": "Yoma Duelist",
+            "class": "Infiltrator",
+            "faction": "Wrath Corporation",
+            "health": 2,
+            "stamina": 4,
+            "might": 2,
+            "cunning": 3,
+            "intellect": 3,
+            "cost": "16"
+        },
+        {
+            "id": "7",
+            "name": "Samuel Cormac",
+            "class": "Sniper",
+            "faction": "Akugai",
+            "health": 4,
+            "stamina": 6,
+            "might": 3,
+            "cunning": 8,
+            "intellect": 3,
+            "cost": "24"
+        },
+        {
+            "id": "8",
+            "name": "Cillian Oisin",
+            "class": "Infiltrator",
+            "faction": "Akugai",
+            "health": 3,
+            "stamina": 3,
+            "might": 3,
+            "cunning": 2,
+            "intellect": 3,
+            "cost": "16"
+        }
+    ],
+    "actions": [
+        {
+            "id": 0,
+            "name":"Lock On",
+            "cost": 3,
+            "class": "Sniper",
+            "stamina": 2,
+            "might": 0,
+            "cunning": 3,
+            "intellect": 0,
+            "description": "Type: Action. If successful,choose an enemy figure within medium range and assign it one 'Marked' token.",
+            "dice":"Cng D6"         
+        },
+        {
+            "id": 1,
+            "name": "Silent Death",
+            "cost": 5,
+            "class": "Sniper",
+            "stamina": 4,
+            "might": 0,
+            "cunning": 5,
+            "intellect": 0,
+            "description": "Type: Attack. Range: Medium to Long.",
+            "dice": "Cng D6 x2",
+            "damage": "D6+Cng"
+        },
+        {
+            "id": 2,
+            "name": "Fury of Blades",
+            "cost": 4,
+            "class": "-",
+            "stamina": 3,
+            "might": 3,
+            "cunning": 2,
+            "intellect": 0,
+            "description": "Type: Attack. Range: Melee.",
+            "dice": "Mgt D6, Cng D6",
+            "damage": "D6+Mgt"
+        },
+        {
+            "id": 3,
+            "name": "Smoke Grenade",
+            "cost": 2,
+            "class": "Infiltrator",
+            "stamina": 4,
+            "might": 1,
+            "cunning": 3,
+            "intellect": 0,
+            "description": "Type: Action. Range: Short. Duration: 3 rounds. Effect: Blocks line of sight through and in the range of effect.",
+            "dice": "Cng D6",
+            "damage": "D6+Cng"
+        },
+        {
+            "id": 4,
+            "name": "Breach Security",
+            "cost": 5,
+            "class": "Hacker",
+            "stamina": 3,
+            "might": 0,
+            "cunning": 3,
+            "intellect": 5,
+            "description": "Type: Action. Range: Contact. Effect: For each success, open one door.",
+            "dice": "Cng D6",
+            "damage": "-"
+        },
+        {
+            "id": 5,
+            "name": "Brutal Strike",
+            "cost": 5,
+            "class": "Heavy",
+            "stamina": 3,
+            "might": 7,
+            "cunning": 0,
+            "intellect": 0,
+            "description": "Type: Attack. Range: Melee.",
+            "dice": "Mgt D6 x3",
+            "damage": "D6+Mgt"
+        }
+    ],
+    "upgrades": [
+        {
+            "id": "0",
+            "name": "Hightened Vigor",
+            "cost": "3",
+            "description": "Limit one per unit. Increases unit Health by 1."
+        },
+        {
+            "id": "1",
+            "name": "Endurance Boost",
+            "cost": "2",
+            "description": "Limit one per unit. Increases unit Stamina by 1."
+        },
+        {
+            "id": "2",
+            "name": "Fierce Strength",
+            "cost": "4",
+            "description": "Limit one per unit. Increases unit Might by 1."
+        },
+        {
+            "id": "3",
+            "name": "Cloak and Dagger",
+            "cost": "4",
+            "description": "Limit one per unit. Increases unit Cunning by 1."
+        },
+        {
+            "id": "4",
+            "name": "Eidetic Memory",
+            "cost": "7",
+            "description": "Limit one per unit. Increases unit Intellect by 2."
+        }
+    ],
+    "classes": [
+        {
+            "id": "0",
+            "name": "Skirmisher"
+        },
+        {
+            "id": "1",
+            "name": "Infiltrator"
+        },
+        {
+            "id": "2",
+            "name": "Hacker"
+        },
+        {
+            "id": "3",
+            "name": "Heavy"
+        },
+        {
+            "id": "4",
+            "name": "Sniper"
+        }
+    ],
+    "user_lists": [
+        {
+            "units":[],
+            "actions": [],
+            "upgrades": [],
+            "wins": "",
+            "losses": "",
+            "uid": ""
+        }
+    ]
+}
