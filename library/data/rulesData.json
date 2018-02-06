@@ -1,0 +1,37 @@
+{
+    "phaseOne":[
+        {
+            "name": "Movement Resolution",
+            "description": "Unit Movement is resolved in order of highest to lowest speed. In the case of a tie, the player with initiative moves their unit first. Their are three types of movement: Natural, Swift, and Cautious Movement. ",
+            "noise": "Both Natural and Swift Movement can cause AI to go into the Alert or even the Lock-Down states.",
+            "id": "0"
+        },
+        {
+            "name":"Natural Movement",
+            "description":"Allows a unit to move up to its full movement value.",
+            "noise": "Natural Movement puts all AI within 6 inches on Alert.",
+            "id": "1"
+        },
+        {
+            "name": "Cautious Movement",
+            "description": "A unit ultilizing a cautious move may not exceed half of its' movement value.",
+            "noise":"Cautious movement does not put AI on alert unless the AI has line of sight to the unit.",
+            "id": "2"
+        },
+        {
+            "name": "Swift Movement",
+            "description": "Costs 2 Stamina. Allows a unit to move up to one and a half times its' movement, rounded up.",
+            "noise": "Swift movement puts all AI within 6 inches on Lock-Down, and all units within 10 inches on Alert.",
+            "id": "3"
+        }
+    ],
+    "phaseTwo":[
+        {
+            "name":"Actions",
+            "description":"",
+            "id":""
+        }
+    ],
+    "phaseThree":[],
+    "aiControl":[]
+}

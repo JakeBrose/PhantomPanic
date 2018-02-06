@@ -27,10 +27,16 @@ angular
                 templateUrl: "partials/profile.html",
                 controller: "profileCtrl"
             })
+            // USER LISTS //
             .when("/items/list/userLists", {
                 templateUrl: "partials/userLists.html",
                 controller: "userListCtrl"
             })
+            .when("/items/list/userLists/createList", {
+                templateUrl: "partials/createList.html",
+                controller: "cardCtrl",
+            })
+            // RULEBOOK //
             .when("/items/list/rules", {
                 templateUrl: "partials/rules.html",
                 controller: "rulesCtrl"
