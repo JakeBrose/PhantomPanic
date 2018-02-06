@@ -22,6 +22,18 @@ angular
             .when("/", {
                 templateUrl: "partials/login.html",
                 controller: "loginCtrl",
+            })
+            .when("/items/list", {
+                templateUrl: "partials/profile.html",
+                controller: "profileCtrl"
+            })
+            .when("/items/list/userLists", {
+                templateUrl: "partials/userLists.html",
+                controller: "userListCtrl"
+            })
+            .when("/items/list/rules", {
+                templateUrl: "partials/rules.html",
+                controller: "rulesCtrl"
             });
     })
     .run(FBCreds => {
