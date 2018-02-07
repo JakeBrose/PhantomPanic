@@ -1,0 +1,17 @@
+<div ng-style="{'background-image':'url(library/images/hexGrid1.png)'}">
+    <div class="nav">
+        <p>
+            <a ng-href="/#!/items/list/rules/">
+                Phantom Panic: 1st Edition Rulebook
+            </a>
+        </p>
+    </div>
+    <div>
+        <h1>Phase Three: The Resolution Phase</h1>
+        <div id="addUnit" ng-repeat="phaseThree in phaseThreeData">
+            <p>
+                {{phaseThree.name}}: {{phaseThree.description}}
+            </p>
+        </div>
+    </div>
+</div>

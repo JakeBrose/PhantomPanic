@@ -41,6 +41,19 @@ angular
                 templateUrl: "partials/rules.html",
                 controller: "rulesCtrl"
             })
+            .when("/items/list/rules/movementPhase", {
+                templateUrl: "partials/phases/movementPhase.html",
+                controller: "rulesCtrl"
+            }).when("/items/list/rules/actionPhase", {
+                templateUrl: "partials/phases/actionPhase.html",
+                controller: "rulesCtrl"
+            })
+            .when("/items/list/rules/resolutionPhase", {
+                templateUrl: "partials/phases/resolutionPhase.html",
+                controller: "rulesCtrl"
+            })
+
+            // Lore //
             .when("/items/list/lore", {
                 templateUrl: "partials/lore.html",
                 controller: "loreCtrl"

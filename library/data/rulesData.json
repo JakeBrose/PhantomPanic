@@ -27,11 +27,17 @@
     ],
     "phaseTwo":[
         {
-            "name":"Actions",
-            "description":"",
-            "id":""
+            "name":"Action Resolution",
+            "description":"Actions are resolved in order beginning with the unit that has the highest skill value. In the case of a tie, the player with priority resolves first.",
+            "id":"0"
         }
     ],
-    "phaseThree":[],
+    "phaseThree":[
+        {
+            "name":"Round End",
+            "description":"Once all units have moved and/or taken their actions, the round ends. At this point each player checks to see if any objectives have been completed, and resolves any status effects inflicted on their units. If a player completes all of their objectives, the game is over. In the case where multiple players complete all of their objectives in the same round, the winner is the player with the highest victory points.",
+            "id":"0"
+        }
+    ],
     "aiControl":[]
 }
