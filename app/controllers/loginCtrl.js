@@ -4,9 +4,6 @@ angular
     .module("phantomPanic")
     .controller("loginCtrl", function ($scope, AuthFactory, $window, $rootScope) {
         $scope.test = "hello";
-
-        // TODO: Grab the user form info and send it to AuthFactory
-        // for register / login / logout -- hmm. Maybe rename this Ctrl?
         $scope.register = () => {
             AuthFactory.createUser($scope.account).then(user => {
                 console.log("newUser", user);
@@ -33,5 +30,4 @@ angular
                     console.log("logged out", data);
                 });
         };
-        // $scope.logout();
     });

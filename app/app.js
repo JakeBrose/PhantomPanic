@@ -52,7 +52,6 @@ angular
                 templateUrl: "partials/phases/resolutionPhase.html",
                 controller: "rulesCtrl"
             })
-
             // Lore //
             .when("/items/list/lore", {
                 templateUrl: "partials/lore.html",
