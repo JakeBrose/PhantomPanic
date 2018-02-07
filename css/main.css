@@ -20,4 +20,12 @@ font-family: 'Monofett', cursive;
     background-color: rgb(188, 218, 247, 0.5);
     text-align: center;
 }
+.nav {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgb(188, 218, 247, 0.5);
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
+}
 /*# sourceMappingURL=main.css.map */
