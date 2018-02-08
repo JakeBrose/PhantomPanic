@@ -54,4 +54,12 @@ font-family: 'Monofett', cursive;
   z-index: 1;
   color: grey; }
 
+#imgResize {
+  padding-top: 0.25em;
+  width: 20px;
+  height: 20px; }
+
+#nameListInput {
+  padding: 1px; }
+
 /*# sourceMappingURL=main.css.map */
