@@ -7,11 +7,12 @@
         </p>
     </div>
     <div>
-        <h1>Phase One: The Movement Phase</h1>
+        <h1 class="header">Phase One: The Movement Phase</h1>
         <div id="addUnit" ng-repeat="phaseOne in phaseOneData">
-            <p>
-                {{phaseOne.name}}:
+            <p class="addCard">
+                <b>{{phaseOne.name}}:</b>
                 {{phaseOne.description}}
+                {{phaseOne.noise}}
             </p>
         </div>
     </div>

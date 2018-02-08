@@ -1,27 +1,32 @@
 <div>
-    <div class="nav">
-        <p>
+    <div>
+        <p class="nav">
             <a ng-href="/#!/items/list/">
                 Profile
             </a>
         </p>
-        <p>
+        <p class="nav">
             <a ng-href="/#!/items/list/rules/">
                 Phantom Panic: 1st Edition Rulebook
             </a>
         </p>
-        <p>
+        <p class="nav">
             <a ng-href="/#!/items/list/lore/">
                 Explore the Galaxy of Phantom Panic
             </a>
         </p>
     </div>
-    <h1>User Lists</h1>
+    <h1 class="header">Your Squads</h1>
     <div class="listView">
-        <p>
+        <p class="nav">
             <a ng-href="/#!/items/list/userLists/createList/">
                 Create New List
             </a>
         </p>
+        <div ng-repeat="list in userListData">
+            <p class="nav">
+                {{list.listName}}
+            </p>
+        </div>
     </div>
 </div>

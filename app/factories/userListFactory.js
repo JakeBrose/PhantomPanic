@@ -1,9 +1,11 @@
 'use strict';
 
 angular.module("phantomPanic").factory("userListFactory", function ($http, $q, FBUrl) {
-    let getUserListInfo = () => {
+    
+    let getUserListInfo = (uid) => {
         return $q(function (resolve, reject) {
-            $http.get(`${FBUrl}/user_lists.json`)
+            console.log('uid',uid);
+            $http.get(`${FBUrl}/user_lists.json?orderBy="uid"&equalTo="${uid}"`)
                 .then(function (data) {
                     resolve(data);
                 })
@@ -12,5 +14,17 @@ angular.module("phantomPanic").factory("userListFactory", function ($http, $q, F
                 });
         });
     };
-    return { getUserListInfo };
+    function postNewUserList(newUserListObj){
+        return $q(function (resolve, reject) {
+            $http.post(`${FBUrl}/user_lists.json`, JSON.stringify(newUserListObj))
+            .then(function(data){
+                console.log('data',data);
+                resolve(data);
+            })
+            .catch(function(error){
+                reject(error);
+            });
+        });
+    }
+    return { getUserListInfo, postNewUserList };
 });
