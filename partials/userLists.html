@@ -23,9 +23,13 @@
                 Create New List
             </a>
         </p>
-        <div ng-repeat="list in userListData">
+        <div ng-repeat="(key, list) in userListData">
             <p class="nav">
-                {{list.listName}}
+                {{list.listName}}<br>
+                Wins:{{list.wins}}
+                Losses:{{list.losses}}<br>
+                <button ng-href="">Edit</button>
+                <button ng-click="deleteUserList()">Delete</button>
             </p>
         </div>
     </div>
