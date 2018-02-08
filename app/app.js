@@ -25,38 +25,53 @@ angular
             })
             .when("/items/list", {
                 templateUrl: "partials/profile.html",
-                controller: "profileCtrl"
+                controller: "profileCtrl",
+                resolve: { isAuth }
             })
             // USER LISTS //
             .when("/items/list/userLists", {
                 templateUrl: "partials/userLists.html",
-                controller: "userListCtrl"
+                controller: "userListCtrl",
+                resolve: { isAuth }
             })
             .when("/items/list/userLists/createList", {
                 templateUrl: "partials/createList.html",
-                controller: "cardCtrl",
+                controller: "createListCtrl",
+                resolve: { isAuth }
             })
             // RULEBOOK //
             .when("/items/list/rules", {
                 templateUrl: "partials/rules.html",
-                controller: "rulesCtrl"
+                controller: "rulesCtrl",
+                resolve: { isAuth }
             })
             .when("/items/list/rules/movementPhase", {
                 templateUrl: "partials/phases/movementPhase.html",
-                controller: "rulesCtrl"
-            }).when("/items/list/rules/actionPhase", {
+                controller: "rulesCtrl",
+                resolve: { isAuth }
+            })
+            .when("/items/list/rules/actionPhase", {
                 templateUrl: "partials/phases/actionPhase.html",
-                controller: "rulesCtrl"
+                controller: "rulesCtrl",
+                resolve: { isAuth }
             })
             .when("/items/list/rules/resolutionPhase", {
                 templateUrl: "partials/phases/resolutionPhase.html",
-                controller: "rulesCtrl"
+                controller: "rulesCtrl",
+                resolve: { isAuth }
             })
             // Lore //
             .when("/items/list/lore", {
                 templateUrl: "partials/lore.html",
-                controller: "loreCtrl"
+                controller: "loreCtrl",
+                resolve: { isAuth }
+            })
+            // AR Toolkit //
+            .when("/items/list/arTools", {
+                templateUrl: "partials/arToolkit.html",
+                resolve: { isAuth }
             });
+
     })
     .run(FBCreds => {
         let creds = FBCreds;

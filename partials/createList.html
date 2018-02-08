@@ -7,18 +7,26 @@
         </p>
     </div>
     <div>
-        <h1>Units Selection</h1>
-        <div class="addCard" ng-repeat="unit in unitData">
-            <p>{{unit.name}} <button>add</button></p>
+        <div class="header">Name Your List
+            <input type="text" ng-model="newListName">
+            <input type="image" src="library/images/buttonDemo.png" ng-click="createList()"></input>
         </div>
-        <h1>Action Selection</h1>
+
+        <h1 class="header">Units Selection</h1>
+        <div class="addCard" ng-repeat="unit in unitData">
+            <p><b>{{unit.name}}</b> ({{unit.faction}}) <button>add</button></p>
+        </div>
+
+        <h1 class="header">Action Selection</h1>
         <div class="addCard" ng-repeat="action in actionData">
             <p>{{action.name}}<button>add</button></p>
         </div>
-        <h1>Upgrade Selection</h1>
+
+        <h1 class="header">Upgrade Selection</h1>
         <div class="addCard" ng-repeat="upgrade in upgradeData">
             <p>{{upgrade.name}}<button>add</button></p>
         </div>
+
     </div>
 </div>
 
