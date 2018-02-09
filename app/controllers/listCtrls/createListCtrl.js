@@ -52,7 +52,6 @@ angular
                 unitFactory.postNewUserUnit(userListUnit)
             .then((FBKeyData)=>{
                 console.log('FBKeyData is:',FBKeyData.data.name);
-                $scope.currentListFBKey = FBKeyData.data.name;
             });
             });
         };
@@ -69,7 +68,6 @@ angular
                 actionFactory.postNewUserAction(userListAction)
             .then((FBKeyData)=>{
                 console.log('FBKeyData is:',FBKeyData.data.name);
-                $scope.currentListFBKey = FBKeyData.data.name;
             });
             });
         };
@@ -86,7 +84,6 @@ angular
                 upgradeFactory.postNewUserUpgrade(userListUpgrade)
             .then((FBKeyData)=>{
                 console.log('FBKeyData is:',FBKeyData.data.name);
-                $scope.currentListFBKey = FBKeyData.data.name;
             });
             });
         };

@@ -25,7 +25,8 @@
         </p>
         <div ng-repeat="(key, list) in userListData">
             <p class="nav">
-                {{list.listName}}<br>
+                <a ng-href="/#!/items/list/viewUserList/{{key}}">
+                {{list.listName}}</a><br>
                 Wins:{{list.wins}}
                 Losses:{{list.losses}}<br>
                 <button ng-href="">Edit</button>

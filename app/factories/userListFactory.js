@@ -12,8 +12,45 @@ angular.module("phantomPanic").factory("userListFactory", function ($http, $q, F
                 .catch(function (error) {
                     reject(error);
                 });
+        });   
+    };
+    let getUserListUnitInfo = (listKey) => {
+        return $q(function (resolve, reject) {
+            console.log('listKey', listKey);
+            $http.get(`${FBUrl}/user_lists_units.json?orderBy="listKey"&equalTo="${listKey}"`)
+                .then(function (data) {
+                    resolve(data);
+                })
+                .catch(function (error) {
+                    reject(error);
+                });
         });
     };
+    let getUserListActionInfo = (listKey) => {
+        return $q(function (resolve, reject) {
+            console.log('listKey', listKey);
+            $http.get(`${FBUrl}/user_lists_actions.json?orderBy="listKey"&equalTo="${listKey}"`)
+                .then(function (data) {
+                    resolve(data);
+                })
+                .catch(function (error) {
+                    reject(error);
+                });
+        });
+    };
+    let getUserListUpgradeInfo = (listKey) => {
+        return $q(function (resolve, reject) {
+            console.log('listKey', listKey);
+            $http.get(`${FBUrl}/user_lists_upgrades.json?orderBy="listKey"&equalTo="${listKey}"`)
+                .then(function (data) {
+                    resolve(data);
+                })
+                .catch(function (error) {
+                    reject(error);
+                });
+        });
+    };
+
     function postNewUserList(newUserListObj){
         return $q(function (resolve, reject) {
             $http.post(`${FBUrl}/user_lists.json`, JSON.stringify(newUserListObj))
@@ -26,5 +63,5 @@ angular.module("phantomPanic").factory("userListFactory", function ($http, $q, F
             });
         });
     }
-    return { getUserListInfo, postNewUserList };
+    return { getUserListInfo, postNewUserList, getUserListUnitInfo, getUserListActionInfo, getUserListUpgradeInfo};
 });
