@@ -6,3 +6,39 @@
     </p>
     <h1 class="header">List Name</h1>
 </div>
+<div 
+    class="userCards"
+    ng-repeat=" unit in userUnitArray track by $index">
+    <p class="userUnits">
+        <u><b>{{unit.name}}</b></u>
+        ({{unit.cost}} pts.)<br>
+        -{{unit.faction}}-<br>
+    </p>
+        Mgt:{{unit.might}}<br>
+        Cng:{{unit.cunning}}<br>
+        Int:{{unit.intellect}}<br>
+</div>
+<div 
+    class="userCards"
+    ng-repeat=" action in userActionArray track by $index">
+    <p class="userActions">
+        <u><b>{{action.name}}</b></u>
+        ({{action.cost}} pts.)<br>
+    </p>
+        Mgt:{{action.might}}<br>
+        Cng:{{action.cunning}}<br>
+        Int:{{action.intellect}}<br>
+    </p>
+</div>
+<div 
+    class="userCards"
+    ng-repeat=" upgrade in userUpgradeArray track by $index">
+    <p class="userUpgrades">
+        <u><b>{{upgrade.name}}</b></u>
+        ({{upgrade.cost}} pts.)<br>
+    </p>
+        {{upgrade.description}}<br>
+
+    </p>
+    </p>
+</div>
