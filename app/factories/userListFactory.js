@@ -63,5 +63,23 @@ angular.module("phantomPanic").factory("userListFactory", function ($http, $q, F
             });
         });
     }
-    return { getUserListInfo, postNewUserList, getUserListUnitInfo, getUserListActionInfo, getUserListUpgradeInfo};
+    function deleteUserList (listKey){
+        console.log('Delete User List');
+        return $q(function(resolve, reject){
+            $http.delete(`${FBUrl}/user_lists/${listKey}.json`)
+            .then(function(){
+                resolve();
+            }).catch((error)=>{
+                reject(error);
+            });
+        });
+    }
+
+    return { getUserListInfo, 
+             postNewUserList, 
+             getUserListUnitInfo, 
+             getUserListActionInfo, 
+             getUserListUpgradeInfo, 
+             deleteUserList
+            };
 });

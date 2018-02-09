@@ -13,6 +13,7 @@ angular.module("phantomPanic").factory("actionFactory", function ($http, $q, FBU
         });
     };
     let getSpecificActionInfo = (key) => {
+        console.log('look at this key',key);
         return $q(function (resolve, reject) {
             $http.get(`${FBUrl}/actions/${key}.json`)
                 .then(function (data) {
