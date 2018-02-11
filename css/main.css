@@ -19,8 +19,6 @@ font-family: 'Monofett', cursive;
   margin: 2%;
   background-color: rgba(188, 218, 247, 0.5);
   text-align: center;
-  display: flex;
-  justify-content: initial;
   font-family: 'Bungee Hairline', cursive; }
 
 .ruleCategory {
