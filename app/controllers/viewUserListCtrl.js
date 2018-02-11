@@ -20,7 +20,6 @@ angular
                 unitFactory.getSpecificUnitInfo($scope.unitId)
                 .then((data)=>{
                     $scope.getSpecificUnits = data.data;
-                    // console.log('object.keys',Object.keys(data.data));
                     $scope.userUnitArray.push($scope.getSpecificUnits);
                 });
             }

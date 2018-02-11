@@ -1,16 +1,76 @@
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.js"></script>
+<script src="js/aframe-ar.js"></script>
+<script src="https://cdn.rawgit.com/Dmart331/jsAR/master/public/js/aframe-ar.js"></script>
+<script src="https://unpkg.com/aframe-text-component/dist/aframe-text-component.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-<div>
-    <p class="nav">
-        <a href="http://localhost:8080/#!/items/list">
-            Profile
-        </a>
-    </p>
-    <div id="arsjsDebugUIContainer">
-        <a-scene embedded arjs='trackingMethod: best;'>
-            <a-anchor hit-testing-enabled='true'>
-                <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-            </a-anchor>
-            <a-camera-static/>
-        </a-scene>
-    </div>
-</div>
+<body style='margin : 0px; max-height: 50px; overflow: scroll;'>
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-assets>
+            <!-- id="file name" src="file url" -->
+            <a-asset-item id="helm-obj" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/helmob.obj"></a-asset-item>
+            <a-asset-item id="helm-mtl" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/helm.mtl"></a-asset-item>
+
+            <a-asset-item id="drew-obj" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Drew_Plane3.obj"></a-asset-item>
+            <a-asset-item id="drew-mtl" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Drew_Plane3.mtl"></a-asset-item>
+
+            <a-asset-item id="makery" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Army%20Helm.gltf"></a-asset-item>
+        </a-assets>
+        <a-marker type='pattern' url='https://cdn.rawgit.com/Dmart331/_Arjs/master/leebb.patt' id="lee">
+
+
+            <a-box id="leeBox" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Lee_Kebler_BlackBox_Realities.jpg" depth=".01" height="1"
+                width="0.5">
+                <a-sound play-on-scan-lee id="leeSound" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Slythern.mp3" autoplay="false"
+                    loop="true" position="0 2 5"></a-sound>
+            </a-box>
+
+        </a-marker>
+
+        <a-marker type='pattern' url='https://cdn.rawgit.com/Dmart331/_Arjs/master/drewbb.patt' id="drew">
+
+
+            <!--      <a-box id="drewBox" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Drew_Martin_BlackBox_Realities512.jpg">
+     </a-box> -->
+            <a-entity geometry="primitive: box" material="src:https://cdn.rawgit.com/Dmart331/_Arjs/master/Drew_Martin_BlackBox_Realities512.jpg"></a-entity>
+            <a-sound play-on-scan-drew id="drewSound" src="https://cdn.rawgit.com/Dmart331/_Arjs/master/Griffindor.mp3" autoplay="false"
+                loop="true" position="0 2 5"></a-sound>
+
+        </a-marker>
+        <a-marker preset="hiro" id="Leeslamp">
+            <a-box position="-0.3 0.1 0" id="off" data-state="off" data-lamp-id="Leeslamp" cursor-listener width="0.2" height="0.05"
+                rotation="0 0 0" color="#F03F35"></a-box>
+            <a-box position="0 0.1 0" id="cool" width="0.2" data-lamp-id="Leeslamp" cursor-listener data-state="on" height="0.1" rotation="0 0 0"
+                color="#F5FAFA"></a-box>
+            <a-box position="0.3 0.1 0" id="normal" width="0.2" data-lamp-id="Leeslamp" cursor-listener data-state="on" height="0.1"
+                rotation="0 0 0" color="#F8EAC9"></a-box>
+            <a-box position="0.6 0.1 0" id="warm" width="0.2" data-lamp-id="Leeslamp" cursor-listener data-state="on" height="0.1" rotation="0 0 0"
+                color="#E7CB71"></a-box>
+        </a-marker>
+        <!-- define a simple camera -->
+        <a-entity camera>
+            <a-box 
+                id="orange-cube" 
+                position="-20 0 1.5" 
+                rotation="30 30 0" 
+                width="1" 
+                depth="1" 
+                height="1" 
+                color="#F16745" 
+                href="https://github.com/gasolin/aframe-href-component">
+            </a-box>
+
+        </a-entity>
+    </a-scene>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <!-- <div class="navBack">
+        <p>
+            <a href="http://localhost:8080/#!/items/list">Profile</a>
+        </p>
+    </div> -->
+</body>
+
+
+</html>

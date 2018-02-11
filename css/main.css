@@ -9,7 +9,7 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin: 2%;
-  background-color: rgba(188, 218, 247, 0.5);
+  background-color: rgba(188, 218, 247, 0.9);
   text-align: center;
   font-family: 'Bungee Hairline', cursive; }
 
@@ -17,7 +17,7 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin: 2%;
-  background-color: rgba(188, 218, 247, 0.5);
+  background-color: rgba(188, 218, 247, 0.9);
   text-align: center;
   font-family: 'Bungee Hairline', cursive; }
 
@@ -25,7 +25,7 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin: 2%;
-  background-color: rgba(188, 218, 247, 0.5);
+  background-color: rgba(188, 218, 247, 0.9);
   text-align: center;
   font-family: 'Bungee Hairline', cursive; }
 
@@ -33,14 +33,14 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 2%;
-  background-color: rgba(188, 218, 247, 0.5);
+  background-color: rgba(188, 218, 247, 0.9);
   font-family: 'Bungee Hairline', cursive;
   text-align: center; }
 
 .header {
   font-family: 'Megrim', cursive;
   text-align: center;
-  background-color: rgba(245, 245, 148, 0.5);
+  background-color: rgba(245, 245, 148, 0.9);
   border: 1px solid black;
   border-radius: 12px; }
 
@@ -63,7 +63,7 @@ font-family: 'Monofett', cursive;
 .userUnits {
   border: 1px solid black;
   border-radius: 8px;
-  background-color: rgba(235, 168, 179, 0.5);
+  background-color: rgba(235, 168, 179, 0.9);
   font-family: 'Bungee Hairline', cursive;
   text-align: center; }
 
@@ -71,7 +71,7 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 2%;
-  background-color: rgba(188, 245, 193, 0.5);
+  background-color: rgba(188, 245, 193, 0.9);
   font-family: 'Bungee Hairline', cursive;
   text-align: center; }
 
@@ -79,17 +79,20 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 2%;
-  background-color: rgba(235, 223, 191, 0.5);
+  background-color: rgba(235, 223, 191, 0.9);
   font-family: 'Bungee Hairline', cursive;
   text-align: center; }
 
 .userCards {
   border: 1px solid black;
   border-radius: 12px;
-  background-color: rgba(177, 173, 162, 0.5);
+  background-color: rgba(177, 173, 162, 0.9);
   font-family: 'Bungee Hairline', cursive;
   text-align: center;
   list-style-type: none; }
+
+.navBack {
+  padding-left: 40px; }
 
 .textMight {
   color: red; }
