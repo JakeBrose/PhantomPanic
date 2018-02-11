@@ -74,6 +74,7 @@ angular
             // AR Toolkit //
             .when("/items/list/arTools", {
                 templateUrl: "partials/arToolkit.html",
+                controller: "arToolkitCtrl",
                 resolve: { isAuth }
             });
 
