@@ -8,10 +8,14 @@
 </div>
 <div 
     class="userCards"
-    ng-repeat=" unit in userUnitArray track by $index">
+    ng-repeat=" (key, unit) in userUnitArray track by $index">
     <p class="userUnits">
         <u><b>{{unit.name}}</b></u>
-        ({{unit.cost}} pts.)<br>
+        ({{unit.cost}} pts.)
+            <button 
+                ng-click="deleteUserListUnit(key)">
+                Delete
+            </button><br>
         -{{unit.faction}}-<br>
     </p>
         Mgt:{{unit.might}}<br>
