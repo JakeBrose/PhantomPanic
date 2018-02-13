@@ -85,6 +85,28 @@ angular.module("phantomPanic").factory("userListFactory", function ($http, $q, F
                 });
         });
     }
+    function deleteUserListAction(key) {
+        return $q(function (resolve, reject) {
+            console.log('Delete User List Action', key);
+            $http.delete(`${FBUrl}/user_lists_actions/${key}.json`)
+                .then(function () {
+                    resolve();
+                }).catch((error) => {
+                    reject(error);
+                });
+        });
+    }
+    function deleteUserListUpgrade(key) {
+        return $q(function (resolve, reject) {
+            console.log('Delete User List Upgrade', key);
+            $http.delete(`${FBUrl}/user_lists_upgrades/${key}.json`)
+                .then(function () {
+                    resolve();
+                }).catch((error) => {
+                    reject(error);
+                });
+        });
+    }
 
     return { getUserListInfo, 
              postNewUserList, 
@@ -92,6 +114,8 @@ angular.module("phantomPanic").factory("userListFactory", function ($http, $q, F
              getUserListActionInfo, 
              getUserListUpgradeInfo, 
              deleteUserList,
-             deleteUserListUnit
+             deleteUserListUnit,
+             deleteUserListAction,
+             deleteUserListUpgrade
             };
 });

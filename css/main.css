@@ -103,4 +103,14 @@ font-family: 'Monofett', cursive;
 .textIntelect {
   color: blue; }
 
+.diceImg {
+  padding-top: 0.25em;
+  width: 60px;
+  height: 60px; }
+
+.diceBackground {
+  background-color: rgba(177, 173, 162, 0.9);
+  border-style: inset none;
+  border-radius: 25px; }
+
 /*# sourceMappingURL=main.css.map */

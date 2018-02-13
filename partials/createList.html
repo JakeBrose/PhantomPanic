@@ -3,9 +3,15 @@
         <a ng-href="/#!/items/list/userLists/">
             Your Lists
         </a>
+    <p class="nav">
+        <a ng-href="/#!/items/list/viewUserList/{{currentListFBKey}}">
+            Go to List
+        </a>
+        </p>
     </p>
 </div>
 <div 
+    ng-hide="currentListFBKey"
     class="header">
     Name Your List
     <input 
@@ -19,51 +25,56 @@
         ng-click="createList()">
     </input>
 </div>
-<h1 
-    class="header">
-    Units Selection
-</h1>
-<div 
-    class="addCard" 
-    ng-repeat="(key, unit) in unitData">
-    <p>
-        <b>{{unit.name}}</b> 
-        ({{unit.faction}}) 
-        <button 
-            ng-click="addUnitToNewList(key)">
-            add
-        </button>
-    </p>
-</div>
-<h1 
-    class="header">
-    Action Selection
-</h1>
-<div 
-    class="addCard" 
-    ng-repeat="(key,action) in actionData">
-    <p>
-        {{action.name}}
-        <button
-            ng-click="addActionToNewList(key)">
-            add
-        </button>
-    </p>
-</div>
-<h1 
-    class="header">
-    Upgrade Selection
-</h1>
-<div 
-    class="addCard" 
-    ng-repeat="(key, upgrade) in upgradeData">
-    <p>
-        {{upgrade.name}}
-        <button
-            ng-click="addUpgradeToNewList(key)">
-            add
-        </button>
-    </p>
+
+<div
+    ng-show="currentListFBKey">
+    <h1 
+        class="header">
+        Units Selection
+    </h1>
+
+    <div 
+        class="addCard" 
+        ng-repeat="(key, unit) in unitData">
+        <p>
+            <b>{{unit.name}}</b> 
+            ({{unit.faction}}) 
+            <button 
+                ng-click="addUnitToNewList(key)">
+                add
+            </button>
+        </p>
+    </div>
+    <h1 
+        class="header">
+        Action Selection
+    </h1>
+    <div 
+        class="addCard" 
+        ng-repeat="(key,action) in actionData">
+        <p>
+            {{action.name}}
+            <button
+                ng-click="addActionToNewList(key)">
+                add
+            </button>
+        </p>
+    </div>
+    <h1 
+        class="header">
+        Upgrade Selection
+    </h1>
+    <div 
+        class="addCard" 
+        ng-repeat="(key, upgrade) in upgradeData">
+        <p>
+            {{upgrade.name}}
+            <button
+                ng-click="addUpgradeToNewList(key)">
+                add
+            </button>
+        </p>
+    </div>
 </div>
 
 

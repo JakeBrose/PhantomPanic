@@ -9,6 +9,15 @@
     <title>Phantom Panic</title>
 </head>
 <body ng-app="phantomPanic" ng-style="{'background-image':'url(library/images/hexgrid2.png)'}">
+    <audio 
+        id="audioVolume"
+        src="library/sounds/PhantomPanic.m4a"
+        autoplay loop>
+    </audio>
+    <script>
+        var audio = document.getElementById("audioVolume");
+        audio.volume = 0.2;
+    </script>
     <h1 class="logo">Phantom Panic</h1 class="logo">
     <div ng-view></div>
 
@@ -29,6 +38,7 @@
     <script type="text/javascript" src="app/factories/phaseOneFactory.js"></script>
     <script type="text/javascript" src="app/factories/phaseTwoFactory.js"></script>
     <script type="text/javascript" src="app/factories/phaseThreeFactory.js"></script>
+    <script type="text/javascript" src="app/factories/diceFactory.js"></script>
     <!-- controllers   -->
     <script type="text/javascript" src="app/controllers/loginCtrl.js"></script>
     <script type="text/javascript" src="app/controllers/profileCtrl.js"></script>

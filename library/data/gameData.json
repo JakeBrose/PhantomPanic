@@ -292,5 +292,40 @@
             "id": "0"
         }
     ],
-    "aiControl": []
+    "aiControl": [],
+    "dice": [
+        {
+            "name":"cunning",
+            "result": [
+                "1 hit!",
+                "1 crit!",
+                "2 hits!",
+                "1 hit and 1 special!",
+                "2 hit and 1 special!",
+                "1 hit 1 crit, and 1 special!"
+            ]
+        },
+        {
+            "name": "might",
+            "result": [
+                "Blank City, Bozo!",
+                "1 hit!",
+                "2 hits!",
+                "1 hit and 1 crit!",
+                "2 hits and 1 special!",
+                "2 hits and 1 crit!"
+            ]
+        },
+        {
+            "name": "intellect",
+            "result": [
+                "Blank City, Bozo!",
+                "1 hit!",
+                "1 hit and 1 special!",
+                "1 crit and 1 special!",
+                "2 specials!",
+                "1 hit and 2 specials!"
+            ]
+        }
+    ]
 }
