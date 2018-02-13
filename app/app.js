@@ -76,7 +76,14 @@ angular
                 templateUrl: "partials/arToolkit.html",
                 controller: "arToolkitCtrl",
                 resolve: { isAuth }
+            })
+            //  Action Dice Roller //
+            .when("/items/list/diceRoller", {
+                templateUrl: "partials/diceRoller.html",
+                controller: "diceRollCtrl",
+                resolve: { isAuth }
             });
+
 
     })
     .run(FBCreds => {
