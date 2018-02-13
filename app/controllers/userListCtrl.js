@@ -5,6 +5,7 @@ angular
     .controller("userListCtrl", function ($scope, userListFactory, AuthFactory, $route){
         let userId = AuthFactory.getCurrentUser();
         console.log('userId',userId);
+        
         userListFactory.getUserListInfo(AuthFactory.getCurrentUser()).then(function (data) {
             console.log('userListData', data);
             $scope.userListData = data.data;
