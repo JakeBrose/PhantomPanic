@@ -13,7 +13,7 @@
         <u><b>{{unit.name}}</b></u>
         ({{unit.cost}} pts.)
             <button 
-                ng-click="deleteUserListUnit(key)">
+                ng-click="deleteUserListUnit(unit.relationshipId)">
                 Delete
             </button><br>
         -{{unit.faction}}-<br>
@@ -24,10 +24,14 @@
 </div>
 <div 
     class="userCards"
-    ng-repeat=" action in userActionArray track by $index">
+    ng-repeat=" (key, action) in userActionArray track by $index">
     <p class="userActions">
         <u><b>{{action.name}}</b></u>
         ({{action.cost}} pts.)<br>
+        <button 
+            ng-click="deleteUserListAction(action.relationshipId)">
+            Delete
+        </button><br>
     </p>
         Mgt:{{action.might}}<br>
         Cng:{{action.cunning}}<br>
@@ -36,13 +40,19 @@
 </div>
 <div 
     class="userCards"
-    ng-repeat=" upgrade in userUpgradeArray track by $index">
+    ng-repeat=" (key, upgrade) in userUpgradeArray track by $index">
     <p class="userUpgrades">
         <u><b>{{upgrade.name}}</b></u>
         ({{upgrade.cost}} pts.)<br>
+        <button 
+            ng-click="deleteUserListUpgrade(upgrade.relationshipId)">
+            Delete
+        </button>
+        <br>
     </p>
         {{upgrade.description}}<br>
 
     </p>
     </p>
 </div>
+

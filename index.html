@@ -9,6 +9,15 @@
     <title>Phantom Panic</title>
 </head>
 <body ng-app="phantomPanic" ng-style="{'background-image':'url(library/images/hexgrid2.png)'}">
+    <audio 
+        id="audioVolume"
+        src="library/sounds/PhantomPanic.m4a"
+        autoplay loop>
+    </audio>
+    <script>
+        var audio = document.getElementById("audioVolume");
+        audio.volume = 0.2;
+    </script>
     <h1 class="logo">Phantom Panic</h1 class="logo">
     <div ng-view></div>
 

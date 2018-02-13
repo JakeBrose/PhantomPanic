@@ -44,6 +44,11 @@ angular
                 controller: "viewUserListCtrl",
                 resolve: { isAuth }
             })
+            .when("/items/list/userLists/updateList/:id", {
+                templateUrl: "partials/createList.html",
+                controller: "createListCtrl",
+                resolve: { isAuth }
+            })
             // RULEBOOK //
             .when("/items/list/rules", {
                 templateUrl: "partials/rules.html",

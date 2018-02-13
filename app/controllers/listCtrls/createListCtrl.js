@@ -2,7 +2,7 @@
 
 angular
     .module("phantomPanic")
-    .controller("createListCtrl", function ($scope, AuthFactory, unitFactory, actionFactory, upgradeFactory, userListFactory) {
+    .controller("createListCtrl", function ($scope, AuthFactory, unitFactory, actionFactory, upgradeFactory, userListFactory, $routeParams) {
         let userId = AuthFactory.getCurrentUser();
 
         console.log('userId', userId);
@@ -24,6 +24,8 @@ angular
         }).catch(function (error) {
             console.log('sorry', error);
         });
+        
+        $scope.currentListFBKey = $routeParams.id;
 
         $scope.createList = () => {
             let newUserList = {

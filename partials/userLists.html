@@ -29,8 +29,10 @@
                 {{list.listName}}</a><br>
                 Wins:{{list.wins}}
                 Losses:{{list.losses}}<br>
-                <button><a ng-href="/#!/items/list/userLists/createList">Add to List</a></button>
                 <button ng-click="deleteUserList(key)">Delete</button>
+                <button>
+                    <a ng-href="/#!/items/list/userLists/updateList/{{key}}">Add to List</a>
+                </button>
             </p>
         </div>
     </div>
