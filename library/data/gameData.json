@@ -326,6 +326,28 @@
                 "2 specials!",
                 "1 hit and 2 specials!"
             ]
+        },
+        {
+            "name": "armor",
+            "result": [
+                "Blank City, Bozo!",
+                "1 guard!",
+                "1 anti-special!",
+                "2 guard!",
+                "2 guard!",
+                "3 guard!"
+            ]
+        },
+        {
+            "name": "evade",
+            "result": [
+                "Blank City, Bozo!",
+                "Blank City, Bozo!",               
+                "Blank City, Bozo!",               
+                "2 evade!",
+                "2 evades!",
+                "3 evades!"
+            ]
         }
     ]
 }

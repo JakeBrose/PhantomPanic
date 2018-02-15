@@ -1,21 +1,17 @@
 <div>
-    <div>
-        <p class="nav">
-            <a ng-href="/#!/items/list">
-                Profile
-            </a>
-        </p>
-        <p class="nav">
-            <a ng-href="/#!/items/list/userLists/">
-                Your Lists
-            </a>
-        </p>
-        <p class="nav">
-            <a ng-href="/#!/items/list/lore/">
-                Explore the Galaxy of Phantom Panic
-            </a>
-        </p>
-    </div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" ng-href="/#!/items/list/">Home</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/userLists/">View Lists</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/diceRoller">Dice Roller</a>
+                <a class="dropdown-item" href="partials/arToolkit.html">Virtual Toolkit</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/rules/">Rulebook</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/lore/">Archives</a>
+            </div>
+        </li>
+    </ul>
     <div class="rules">
         <h1 class="header">
             Phantom Panic: 1st Edition Rulebook

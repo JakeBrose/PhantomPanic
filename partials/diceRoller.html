@@ -1,43 +1,64 @@
 <div>
-    <p class="nav">
-        <a ng-href="/#!/items/list/userLists/">
-            View Lists
-        </a>
-    </p>
-    <p class="nav">
-        <a ng-href="/#!/items/list/rules/">
-            Phantom Panic: 1st Edition Rulebook
-        </a>
-    </p>
-    <p class="nav">
-        <a ng-href="/#!/items/list/lore/">
-            Explore the Galaxy of Phantom Panic
-        </a>
-    </p>
-    <p class="nav">
-        <a href="partials/arToolkit.html">
-            Virtual Toolkit
-        </a>
-    </p>
+    <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" ng-href="/#!/items/list/">Home</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/userLists/">View Lists</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/diceRoller">Dice Roller</a>
+                <a class="dropdown-item" href="partials/arToolkit.html">Virtual Toolkit</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/rules/">Rulebook</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/lore/">Archives</a>
+            </div>
+        </li>
+    </ul>
 </div>
 <div class="diceBackground">
     <input
         class="diceImg"
         type="image"  
         src="library/images/mightDie.png" 
-        ng-click="mightResult()">
+        ng-click="mightResult(); eraseResults()">
     </input>
     <input 
         class="diceImg"
         type="image"  
         src="library/images/cunningDie.png" 
-        ng-click="rollCunning()">
+        ng-click="cunningResult(); eraseResults()">
     </input>
     <input
         class="diceImg" 
         type="image"  
         src="library/images/intellectDie.png" 
-        ng-click="rollIntellect()">
+        ng-click="intellectResult(); eraseResults()">
+    </input><br>
+    <input 
+        class="diceImg"
+        type="image"  
+        src="library/images/armorDie.png" 
+        ng-click="armorResult(); eraseResults()">
+    </input>
+    <input 
+        class="diceImg"
+        type="image"  
+        src="library/images/evadeDie.png" 
+        ng-click="evadeResult(); eraseResults()">
     </input>
 
 </div>
+<div class="mightResult">
+    {{mightRollResult}}
+</div>
+<div class="cunningResult">
+    {{cunningRollResult}}
+</div>
+<div class="intellectResult">
+    {{intellectRollResult}}
+</div>
+<div class="armorResult">
+    {{armorRollResult}}
+</div>
+<div class="evadeResult">
+    {{evadeRollResult}}
+</div>
+
