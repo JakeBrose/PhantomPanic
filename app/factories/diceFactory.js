@@ -12,6 +12,7 @@ angular.module("phantomPanic").factory("diceFactory", function ($http, $q, FBUrl
                 });
         });
     };
+
     let getMightResults = () => {
         return $q(function (resolve, reject) {
             $http.get(`${FBUrl}/dice/1.json`)
@@ -34,9 +35,33 @@ angular.module("phantomPanic").factory("diceFactory", function ($http, $q, FBUrl
                 });
         });
     };
+    let getArmorResults = () => {
+        return $q(function (resolve, reject) {
+            $http.get(`${FBUrl}/dice/3.json`)
+                .then(function (data) {
+                    resolve(data);
+                })
+                .catch(function (error) {
+                    reject(error);
+                });
+        });
+    };
+    let getEvadeResults = () => {
+        return $q(function (resolve, reject) {
+            $http.get(`${FBUrl}/dice/4.json`)
+                .then(function (data) {
+                    resolve(data);
+                })
+                .catch(function (error) {
+                    reject(error);
+                });
+        });
+    };
     return { 
         getCunningResults ,
         getMightResults,
-        getIntellectResults
+        getIntellectResults,
+        getArmorResults,
+        getEvadeResults
     };
 });

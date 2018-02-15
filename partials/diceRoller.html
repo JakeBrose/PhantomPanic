@@ -25,19 +25,47 @@
         class="diceImg"
         type="image"  
         src="library/images/mightDie.png" 
-        ng-click="mightResult()">
+        ng-click="mightResult(); eraseResults()">
     </input>
     <input 
         class="diceImg"
         type="image"  
         src="library/images/cunningDie.png" 
-        ng-click="rollCunning()">
+        ng-click="cunningResult(); eraseResults()">
     </input>
     <input
         class="diceImg" 
         type="image"  
         src="library/images/intellectDie.png" 
-        ng-click="rollIntellect()">
+        ng-click="intellectResult(); eraseResults()">
+    </input><br>
+    <input 
+        class="diceImg"
+        type="image"  
+        src="library/images/armorDie.png" 
+        ng-click="armorResult(); eraseResults()">
+    </input>
+    <input 
+        class="diceImg"
+        type="image"  
+        src="library/images/evadeDie.png" 
+        ng-click="evadeResult(); eraseResults()">
     </input>
 
 </div>
+<div class="mightResult">
+    {{mightRollResult}}
+</div>
+<div class="cunningResult">
+    {{cunningRollResult}}
+</div>
+<div class="intellectResult">
+    {{intellectRollResult}}
+</div>
+<div class="armorResult">
+    {{armorRollResult}}
+</div>
+<div class="evadeResult">
+    {{evadeRollResult}}
+</div>
+

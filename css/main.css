@@ -5,6 +5,11 @@ font-family: 'Julius Sans One', sans-serif;
 font-family: 'Megrim', cursive;
 font-family: 'Monofett', cursive; 
 ********************************************/
+@font-face {
+  font-family: 'vcr_osd_monoregular';
+  src: url("vcr_osd_mono_1.001-webfont.woff2") format("woff2"), url("vcr_osd_mono_1.001-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 .logo {
   border: 1px solid black;
   border-radius: 12px;
@@ -112,5 +117,48 @@ font-family: 'Monofett', cursive;
   background-color: rgba(177, 173, 162, 0.9);
   border-style: inset none;
   border-radius: 25px; }
+
+.backgroundImg {
+  background: no-repeat; }
+
+.mightResult {
+  border: 0px solid black;
+  border-radius: 12px;
+  margin: 2%;
+  background-color: rgba(247, 188, 188, 0.9);
+  text-align: center;
+  font-family: 'Bungee Hairline', cursive; }
+
+.cunningResult {
+  border: 0px solid black;
+  border-radius: 12px;
+  margin: 2%;
+  background-color: rgba(193, 247, 188, 0.9);
+  text-align: center;
+  font-family: 'Bungee Hairline', cursive; }
+
+.intellectResult {
+  border: 0px solid black;
+  border-radius: 12px;
+  margin: 2%;
+  background-color: rgba(188, 218, 247, 0.9);
+  text-align: center;
+  font-family: 'Bungee Hairline', cursive; }
+
+.armorResult {
+  border: 0px solid black;
+  border-radius: 12px;
+  margin: 2%;
+  background-color: rgba(224, 226, 114, 0.9);
+  text-align: center;
+  font-family: 'Bungee Hairline', cursive; }
+
+.evadeResult {
+  border: 0px solid black;
+  border-radius: 12px;
+  margin: 2%;
+  background-color: rgba(232, 232, 233, 0.9);
+  text-align: center;
+  font-family: 'Bungee Hairline', cursive; }
 
 /*# sourceMappingURL=main.css.map */
