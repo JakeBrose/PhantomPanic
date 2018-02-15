@@ -1,13 +1,23 @@
 <div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" ng-href="/#!/items/list/">Home</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/userLists/">View Lists</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/diceRoller">Dice Roller</a>
+                <a class="dropdown-item" href="partials/arToolkit.html">Virtual Toolkit</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/rules/">Rulebook</a>
+                <a class="dropdown-item" ng-href="/#!/items/list/lore/">Archives</a>
+            </div>
+        </li>
+    </ul>
     <p class="nav">
-        <a ng-href="/#!/items/list/userLists/">
-            Your Lists
-        </a>
-    <p class="nav">
-        <a ng-href="/#!/items/list/viewUserList/{{currentListFBKey}}">
+        <a 
+            ng-href="/#!/items/list/viewUserList/{{currentListFBKey}}"
+            ng-show="currentListFBKey">
             Go to List
         </a>
-        </p>
     </p>
 </div>
 <div 
@@ -18,12 +28,11 @@
         type="text" 
         id="nameListInput"
         ng-model="newListName"/>
-    <input 
-        type="image" 
-        id="imgResize" 
-        src="library/images/buttonDemo.png" 
+    <button 
+        type="text"   
         ng-click="createList()">
-    </input>
+        Create List
+    </button>
 </div>
 
 <div
@@ -38,7 +47,8 @@
         ng-repeat="(key, unit) in unitData">
         <p>
             <b>{{unit.name}}</b> 
-            ({{unit.faction}}) 
+            ({{unit.faction}})
+            <br> 
             <button 
                 ng-click="addUnitToNewList(key)">
                 add
@@ -54,6 +64,7 @@
         ng-repeat="(key,action) in actionData">
         <p>
             {{action.name}}
+            <br>
             <button
                 ng-click="addActionToNewList(key)">
                 add
@@ -69,6 +80,7 @@
         ng-repeat="(key, upgrade) in upgradeData">
         <p>
             {{upgrade.name}}
+            <br>
             <button
                 ng-click="addUpgradeToNewList(key)">
                 add

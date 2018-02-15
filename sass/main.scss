@@ -132,6 +132,35 @@ font-family: 'Monofett', cursive;
 }
 .backgroundImg{
     background: no-repeat;
+    background-attachment: fixed;
+}
+
+.userLists{
+    // display: flex;
+    // align-content: center;
+    background-color: rgba(188, 218, 247, 0.9);
+    border: 1px solid black;
+    border-radius: 25px;
+    // height: 30px;
+    display: flex;
+    font-family: 'Bungee Hairline', cursive;
+    justify-content: flex-end;
+}
+.userLists > button {
+    line-height: .4em;
+    margin: 2%;
+}
+
+.userLists > a {
+    margin-right: 9%;
+}
+.createList {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgba(188, 218, 247, 0.9);
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
 }
 //////////////////////////////////////////////////
 //              Dice Results                /////
