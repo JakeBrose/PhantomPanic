@@ -14,48 +14,46 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin: 2%;
-  background-color: rgba(188, 218, 247, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
   text-align: center;
-  font-family: 'Bungee Hairline', cursive; }
+  font-family: 'Bungee Hairline', cursive;
+  font-weight: 200;
+  color: white; }
 
 .addCard {
   border: 1px solid black;
   border-radius: 12px;
   margin: 2%;
-  background-color: rgba(188, 218, 247, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
   text-align: center;
-  font-family: 'Bungee Hairline', cursive; }
+  font-family: 'Bungee Hairline', cursive;
+  color: white; }
 
 .ruleCategory {
   border: 1px solid black;
   border-radius: 12px;
   margin: 2%;
-  background-color: rgba(188, 218, 247, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
   text-align: center;
-  font-family: 'Bungee Hairline', cursive; }
+  font-family: 'Bungee Hairline', cursive;
+  color: white; }
 
 .nav {
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 2%;
-  background-color: rgba(188, 218, 247, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
   font-family: 'Bungee Hairline', cursive;
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .header {
-  font-family: 'Megrim', cursive;
+  font-family: 'Bungee Hairline', cursive;
   text-align: center;
-  background-color: rgba(245, 245, 148, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
   border: 1px solid black;
-  border-radius: 12px; }
-
-#arsjsDebugUIContainer {
-  position: fixed;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  color: grey; }
+  border-radius: 12px;
+  color: white; }
 
 #imgResize {
   padding-top: 0.25em;
@@ -123,7 +121,8 @@ font-family: 'Monofett', cursive;
   background-attachment: fixed; }
 
 .userLists {
-  background-color: rgba(188, 218, 247, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
+  color: white;
   border: 1px solid black;
   border-radius: 25px;
   display: flex;
@@ -141,7 +140,8 @@ font-family: 'Monofett', cursive;
   border: 1px solid black;
   border-radius: 12px;
   margin-top: 2%;
-  background-color: rgba(188, 218, 247, 0.9);
+  background-color: rgba(41, 42, 43, 0.9);
+  color: white;
   font-family: 'Bungee Hairline', cursive;
   text-align: center; }
 
@@ -184,5 +184,32 @@ font-family: 'Monofett', cursive;
   background-color: rgba(232, 232, 233, 0.9);
   text-align: center;
   font-family: 'Bungee Hairline', cursive; }
+
+.addUnit {
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-top: 2%;
+  background-color: rgba(151, 93, 78, 0.9);
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  color: white; }
+
+.addAction {
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-top: 2%;
+  background-color: rgba(46, 109, 54, 0.9);
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  color: white; }
+
+.addUpgrade {
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: rgba(184, 153, 69, 0.9);
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
+  list-style-type: none;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

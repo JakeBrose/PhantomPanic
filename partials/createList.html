@@ -38,12 +38,12 @@
 <div
     ng-show="currentListFBKey">
     <h1 
-        class="header">
+        class="addUnit">
         Units Selection
     </h1>
 
     <div 
-        class="addCard" 
+        class="addUnit" 
         ng-repeat="(key, unit) in unitData">
         <p>
             <b>{{unit.name}}</b> 
@@ -56,11 +56,11 @@
         </p>
     </div>
     <h1 
-        class="header">
+        class="addAction">
         Action Selection
     </h1>
     <div 
-        class="addCard" 
+        class="addAction" 
         ng-repeat="(key,action) in actionData">
         <p>
             {{action.name}}
@@ -72,11 +72,11 @@
         </p>
     </div>
     <h1 
-        class="header">
+        class="addUpgrade">
         Upgrade Selection
     </h1>
     <div 
-        class="addCard" 
+        class="addUpgrade" 
         ng-repeat="(key, upgrade) in upgradeData">
         <p>
             {{upgrade.name}}
