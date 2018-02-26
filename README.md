@@ -1,1 +1,2 @@
-# Phantom Panic Companion App
+# Alt-Phantom Panic Companion App
+===================================
