@@ -3,7 +3,7 @@
 
 The __Phantom Panic__ companion app is a web application designed to assist in beta testing my tabletop game of the same name, as well as provide users with a better tabletop gaming experience. Many potential tabletop players find some aspects of the hobby to be overwhelming, and this application seeks to fix that by removing much of the clutter often assosciated with these games and instead providing essential tools in app. Users of this app can create, store, and edit lists, and are provided a range of gaming tools such as dice, the rulebook, and the movement template. 
 
-##__Specifications__
+## Specifications
 This application was created with the following:
 + HTML5
 + CSS and Bootstrap 4.0.0 for styling
