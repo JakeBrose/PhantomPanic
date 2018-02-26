@@ -14,3 +14,7 @@ This application was created with the following:
 
 ## User's Lists
 ![user list page](https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/lists.png)
+
+## Dice Roller
+![dice roller]
+(https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/dice.png)
