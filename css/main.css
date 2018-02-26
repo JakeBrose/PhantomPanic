@@ -117,15 +117,6 @@ font-family: 'Monofett', cursive;
 .userLists > a {
   margin-right: 9%; }
 
-.createList {
-  border: 1px solid black;
-  border-radius: 12px;
-  margin-top: 2%;
-  background-color: rgba(41, 42, 43, 0.9);
-  color: white;
-  font-family: 'Bungee Hairline', cursive;
-  text-align: center; }
-
 .diceImg {
   padding-top: 0.25em;
   width: 60px;
@@ -195,6 +186,20 @@ font-family: 'Monofett', cursive;
   background-color: rgba(232, 232, 233, 0.9);
   text-align: center;
   font-family: 'Bungee Hairline', cursive; }
+
+.createList {
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-top: 2%;
+  background-color: rgba(41, 42, 43, 0.9);
+  color: white;
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center; }
+
+.scrollbar {
+  width: 400px;
+  overflow-y: auto;
+  height: 200px; }
 
 .addUnit {
   border: 1px solid black;

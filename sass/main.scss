@@ -128,15 +128,9 @@ font-family: 'Monofett', cursive;
 .userLists > a {
     margin-right: 9%;
 }
-.createList {
-    border: 1px solid black;
-    border-radius: 12px;
-    margin-top: 2%;
-    background-color: rgba(41, 42, 43, 0.9);
-    color: white;
-    font-family: 'Bungee Hairline', cursive;
-    text-align: center;
-}
+
+
+
 //////////////////////////////////////////////////
 //              Dice Results                /////
 ////////////////////////////////////////////////
@@ -218,6 +212,27 @@ font-family: 'Monofett', cursive;
     font-family: 'Bungee Hairline', cursive;
 }
 ////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////
+//             add/create list item styling     //
+//////////////////////////////////////////////////
+
+.createList {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgba(41, 42, 43, 0.9);
+    color: white;
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
+}
+
+.scrollbar {
+    width:400px;
+    overflow-y: auto;
+    height: 200px;
+}
 .addUnit {
     border: 1px solid black;
     border-radius: 12px;
@@ -235,7 +250,7 @@ font-family: 'Monofett', cursive;
     background-color: rgba(46, 109, 54, 0.9);
     font-family: 'Bungee Hairline', cursive;
     text-align: center;
-     color: white;
+    color: white;
 }
 
 .addUpgrade {
@@ -245,5 +260,6 @@ font-family: 'Monofett', cursive;
     font-family: 'Bungee Hairline', cursive;
     text-align: center;
     list-style-type: none;
-     color: white;
+    color: white;
 }
+/////////////////////////////////////////////////

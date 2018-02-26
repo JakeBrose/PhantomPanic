@@ -41,55 +41,58 @@
         class="addUnit">
         Hero Selection
     </h1>
+    <div class="scrollbar">
+        <div
+            class="addUnit" 
+            ng-repeat="(key, unit) in unitData">
+            <p>
+                <b>{{unit.name}}</b> 
+                ({{unit.faction}})
+                <br> 
+                <button 
+                    ng-click="addUnitToNewList(key)">
+                    add
+                </button>
+            </p>
+        </div>
+    </div>
 
-    <div 
-        class="addUnit" 
-        ng-repeat="(key, unit) in unitData">
-        <p>
-            <b>{{unit.name}}</b> 
-            ({{unit.faction}})
-            <br> 
-            <button 
-                ng-click="addUnitToNewList(key)">
-                add
-            </button>
-            <div
-             ng-hide="addUnitToNewList(key)">
-                <p>ADDED!</p>
-            </div>
-        </p>
+        <h1 
+            class="addAction">
+            Action Selection
+        </h1>
+    <div class="scrollbar">
+        <div 
+            class="addAction" 
+            ng-repeat="(key,action) in actionData">
+            <p>
+                {{action.name}}
+                <br>
+                <button
+                    ng-click="addActionToNewList(key)">
+                    add
+                </button>
+            </p>
+        </div>
     </div>
+
     <h1 
-        class="addAction">
-        Action Selection
+    class="addUpgrade">
+    Upgrade Selection
     </h1>
-    <div 
-        class="addAction" 
-        ng-repeat="(key,action) in actionData">
-        <p>
-            {{action.name}}
-            <br>
-            <button
-                ng-click="addActionToNewList(key)">
-                add
-            </button>
-        </p>
-    </div>
-    <h1 
-        class="addUpgrade">
-        Upgrade Selection
-    </h1>
-    <div 
-        class="addUpgrade" 
-        ng-repeat="(key, upgrade) in upgradeData">
-        <p>
-            {{upgrade.name}}
-            <br>
-            <button
-                ng-click="addUpgradeToNewList(key)">
-                add
-            </button>
-        </p>
+    <div class="scrollbar">
+        <div 
+            class="addUpgrade" 
+            ng-repeat="(key, upgrade) in upgradeData">
+            <p>
+                {{upgrade.name}}
+                <br>
+                <button
+                    ng-click="addUpgradeToNewList(key)">
+                    add
+                </button>
+            </p>
+        </div>
     </div>
 </div>
 
