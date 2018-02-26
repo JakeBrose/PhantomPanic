@@ -10,9 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Shade|Julius+Sans+One|Megrim|Monofett" rel="stylesheet">
     <title>Phantom Panic</title>
 </head>
-<body ng-app="phantomPanic" class="backgroundImg" ng-style="{'background-image':'url(images/PPBGRND.png)'}">
-    <!-- class="backgroundImg" ng-style="{'background-image':'url(images/hexgrid2.png)'}" -->
-    <audio 
+<body ng-app="phantomPanic" class="backgroundImg" ng-style="{'background-image':'url(images/hexgrid2.png)'}">
+    <!-- <audio 
         id="audioVolume"
         src="sounds/PhantomPanic.m4a"
         autoplay loop>
@@ -20,12 +19,9 @@
     <script>
         var audio = document.getElementById("audioVolume");
         audio.volume = 0.2;
-    </script>
+    </script> -->
     <h1 class="logo">Phantom Panic</h1>
     <div ng-view></div>
-    <!-- <img class="logo" img src="images/PPlogo-2.png" alt="logo">
-    </img> -->
-
 
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>

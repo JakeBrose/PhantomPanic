@@ -14,10 +14,11 @@
     </ul>
     <h1 class="header">{{$scope.newListName}}</h1>
 </div>
+
+<h1 class="header">Your Heroes</h1>
 <div 
-    class="userCards"
     ng-repeat=" (key, unit) in userUnitArray track by $index">
-    <p class="userUnits">
+    <p class="addUnit">
         <u><b>{{unit.name}}</b></u>
         ({{unit.cost}} pts.)
             <button 
@@ -25,31 +26,33 @@
                 Delete
             </button><br>
         -{{unit.faction}}-<br>
-    </p>
         Mgt:{{unit.might}}<br>
         Cng:{{unit.cunning}}<br>
         Int:{{unit.intellect}}<br>
+    </p>
 </div>
+
+<h1 class="header">Your Actions</h1>
 <div 
-    class="userCards"
     ng-repeat=" (key, action) in userActionArray track by $index">
-    <p class="userActions">
+    <p class="addAction">
         <u><b>{{action.name}}</b></u>
         ({{action.cost}} pts.)<br>
         <button 
             ng-click="deleteUserListAction(action.relationshipId)">
             Delete
         </button><br>
-    </p>
         Mgt:{{action.might}}<br>
         Cng:{{action.cunning}}<br>
         Int:{{action.intellect}}<br>
+        {{action.description}}
     </p>
 </div>
+
+<h1 class="header">Your Upgrades</h1>
 <div 
-    class="userCards"
     ng-repeat=" (key, upgrade) in userUpgradeArray track by $index">
-    <p class="userUpgrades">
+    <p class="addUpgrade">
         <u><b>{{upgrade.name}}</b></u>
         ({{upgrade.cost}} pts.)<br>
         <button 
@@ -57,10 +60,7 @@
             Delete
         </button>
         <br>
-    </p>
         {{upgrade.description}}<br>
-
-    </p>
     </p>
 </div>
 

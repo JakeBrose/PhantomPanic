@@ -39,7 +39,7 @@
     ng-show="currentListFBKey">
     <h1 
         class="addUnit">
-        Units Selection
+        Hero Selection
     </h1>
 
     <div 
@@ -53,6 +53,10 @@
                 ng-click="addUnitToNewList(key)">
                 add
             </button>
+            <div
+             ng-hide="addUnitToNewList(key)">
+                <p>ADDED!</p>
+            </div>
         </p>
     </div>
     <h1 

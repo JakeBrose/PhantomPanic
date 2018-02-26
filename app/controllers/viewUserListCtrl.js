@@ -11,7 +11,7 @@ angular
         userListFactory, 
         $route
     ){
-
+        
         userListFactory.getUserListUnitInfo($routeParams.id)
         .then((data)=>{
             $scope.userUnitArray = [];
@@ -26,6 +26,7 @@ angular
                 });
             }
         });
+
         $scope.deleteUserListUnit = (key) => {
             userListFactory.deleteUserListUnit(key)
                 .then(() => {
@@ -48,6 +49,7 @@ angular
                     });
                 }
             });
+            
         $scope.deleteUserListAction = (key) => {
             userListFactory.deleteUserListAction(key)
                 .then(() => {
@@ -70,6 +72,7 @@ angular
                         });
                 }
             });
+
         $scope.deleteUserListUpgrade = (key) => {
             userListFactory.deleteUserListUpgrade(key)
                 .then(() => {
