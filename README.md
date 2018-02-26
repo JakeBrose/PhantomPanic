@@ -16,5 +16,10 @@ This application was created with the following:
 ![user list page](https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/lists.png)
 
 ## Dice Roller
-![dice roller]
-(https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/dice.png)
+![dice roller](https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/dice.png)
+
+## Rulebook
+![rulebook](https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/rulebook.png)
+
+## AR Toolkit
+![arToolkit](https://github.com/JakeBrose/PhantomPanic/blob/master/images/readmeImg/templateIMG.png)
