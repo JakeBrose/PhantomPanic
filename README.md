@@ -1,1 +1,1 @@
-# PhantomPanic
+# Phantom Panic Companion App

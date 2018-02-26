@@ -2,7 +2,7 @@
 
 angular
     .module("phantomPanic")
-    .controller("userListCtrl", function ($scope, userListFactory, AuthFactory, $route){
+    .controller("userListCtrl", function ($scope, userListFactory, AuthFactory, $route, $location){
         let userId = AuthFactory.getCurrentUser();
         console.log('userId',userId);
         
@@ -12,6 +12,7 @@ angular
         }).catch(function (error) {
             console.log('sorry', error);
             });
+            
         $scope.deleteUserList = (listKey) => {
             userListFactory.deleteUserList(listKey)
             .then(()=>{
@@ -19,6 +20,10 @@ angular
                 console.log('list deleted');
             });           
         };
+
+        $scope.loadView = (listKey) => {
+            $location.path("/#!/items/list/userLists/updateList/`'${listKey}'`")
+        }
     });
 
 

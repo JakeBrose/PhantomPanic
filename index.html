@@ -10,26 +10,22 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Shade|Julius+Sans+One|Megrim|Monofett" rel="stylesheet">
     <title>Phantom Panic</title>
 </head>
-<body ng-app="phantomPanic" class="backgroundImg" ng-style="{'background-image':'url(library/images/hexgrid2.png)'}">
-    <!-- class="backgroundImg" ng-style="{'background-image':'url(library/images/hexgrid2.png)'}" -->
-    <audio 
+<body ng-app="phantomPanic" class="backgroundImg" ng-style="{'background-image':'url(images/hexgrid2.png)'}">
+    <!-- <audio 
         id="audioVolume"
-        src="library/sounds/PhantomPanic.m4a"
+        src="sounds/PhantomPanic.m4a"
         autoplay loop>
     </audio>
     <script>
         var audio = document.getElementById("audioVolume");
         audio.volume = 0.2;
-    </script>
+    </script> -->
     <h1 class="logo">Phantom Panic</h1>
     <div ng-view></div>
-    <!-- <img class="logo" img src="library/images/PPlogo-2.png" alt="logo">
-    </img> -->
 
-
-    <script type="text/javascript" src="library/node_modules/angular/angular.min.js"></script>
-    <script type="text/javascript" src="library/node_modules/angular-route/angular-route.min.js"></script>
-    <script type="text/javascript" src="library/node_modules/firebase/firebase.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="node_modules/firebase/firebase.js"></script>
     <script type="text/javascript" src="app/app.js"></script> 
     <script type="text/javascript" src="app/fb-creds.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

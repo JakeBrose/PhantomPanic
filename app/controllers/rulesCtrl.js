@@ -8,12 +8,14 @@ angular
         }).catch(function (error) {
             console.log('sorry', error);
         });
+
         phaseTwoFactory.getPhaseTwoInfo().then(function (data) {
             console.log('data', data);
             $scope.phaseTwoData = data.data;
         }).catch(function (error) {
             console.log('sorry', error);
         });
+        
         phaseThreeFactory.getPhaseThreeInfo().then(function (data) {
             console.log('data', data);
             $scope.phaseThreeData = data.data;

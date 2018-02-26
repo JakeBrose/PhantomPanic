@@ -16,57 +16,53 @@ font-family: 'Monofett', cursive;
     border: 1px solid black;
     border-radius: 12px;
     margin: 2%;
-    background-color: rgba(188, 218, 247, 0.9);
+    background-color: rgba(41, 42, 43, 0.9);
     text-align: center;
     font-family: 'Bungee Hairline', cursive;
-    // font-family: 'vcr_osd_monoregular';
-    // font-weight: normal;
-    // font-style: normal;
+    font-weight: 200;
+    color: white;
 }
 
 .addCard {
     border: 1px solid black;
     border-radius: 12px;
     margin: 2%;
-    background-color: rgba(188, 218, 247, 0.9);
+    background-color: rgba(41, 42, 43, 0.9);
     text-align: center;
     font-family: 'Bungee Hairline', cursive;
+    color: white;
 }
 
 .ruleCategory {
     border: 1px solid black;
     border-radius: 12px;
     margin: 2%;
-    background-color: rgba(188, 218, 247, 0.9);
+    background-color: rgba(41, 42, 43, 0.9);
     text-align: center;
     font-family: 'Bungee Hairline', cursive;
+    color: white;
 }
 
 .nav {
     border: 1px solid black;
     border-radius: 12px;
     margin-top: 2%;
-    background-color: rgba(188, 218, 247, 0.9);
+    background-color: rgba(41, 42, 43, 0.9);
     font-family: 'Bungee Hairline', cursive;
     text-align: center;
+    color: white;
 }
 
 .header {
-    font-family: 'Megrim', cursive;
+    font-family: 'Bungee Hairline', cursive;
     text-align: center;
-    background-color: rgba(245, 245, 148, 0.9);
+    background-color:rgba(41, 42, 43, 0.9);
     border: 1px solid black;
     border-radius: 12px;
+    color: white;
 }
 
-#arsjsDebugUIContainer {
-    position: fixed;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-    color: grey;
-}
+
 
 #imgResize {
     padding-top: 0.25em;
@@ -110,38 +106,16 @@ font-family: 'Monofett', cursive;
 .navBack {
     padding-left: 40px;
 }
-.textMight {
-    color: red;
-}
-.textCunning {
-    color: green;
-}
-.textIntelect {
-    color: blue;
-}
-
-.diceImg{
-    padding-top: 0.25em;
-    width: 60px;
-    height: 60px;
-}
-.diceBackground {
-    background-color: rgba(177, 173, 162, 0.9);
-    border-style: inset none;
-    border-radius: 25px;
-}
 .backgroundImg{
     background: no-repeat;
     background-attachment: fixed;
 }
 
 .userLists{
-    // display: flex;
-    // align-content: center;
-    background-color: rgba(188, 218, 247, 0.9);
+    background-color : rgba(41, 42, 43, 0.9);
+    color: white;
     border: 1px solid black;
     border-radius: 25px;
-    // height: 30px;
     display: flex;
     font-family: 'Bungee Hairline', cursive;
     justify-content: flex-end;
@@ -154,17 +128,49 @@ font-family: 'Monofett', cursive;
 .userLists > a {
     margin-right: 9%;
 }
-.createList {
-    border: 1px solid black;
-    border-radius: 12px;
-    margin-top: 2%;
-    background-color: rgba(188, 218, 247, 0.9);
-    font-family: 'Bungee Hairline', cursive;
-    text-align: center;
-}
+
+
+
 //////////////////////////////////////////////////
 //              Dice Results                /////
 ////////////////////////////////////////////////
+.diceImg {
+    padding-top: 0.25em;
+    width: 60px;
+    height: 60px;
+}
+.diceImg:hover {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.diceBackground {
+    background-color: rgba(177, 173, 162, 0.9);
+    border-style: inset none;
+    border-radius: 25px;
+}
 .mightResult {
     border: 0px solid black;
     border-radius: 12px;
@@ -206,3 +212,54 @@ font-family: 'Monofett', cursive;
     font-family: 'Bungee Hairline', cursive;
 }
 ////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////
+//             add/create list item styling     //
+//////////////////////////////////////////////////
+
+.createList {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgba(41, 42, 43, 0.9);
+    color: white;
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
+}
+
+.scrollbar {
+    width:400px;
+    overflow-y: auto;
+    height: 200px;
+}
+.addUnit {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgba(151, 93, 78, 0.9);
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
+    color: white;
+}
+
+.addAction {
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 2%;
+    background-color: rgba(46, 109, 54, 0.9);
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
+    color: white;
+}
+
+.addUpgrade {
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: rgba(184, 153, 69, 0.9);
+    font-family: 'Bungee Hairline', cursive;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+}
+/////////////////////////////////////////////////
